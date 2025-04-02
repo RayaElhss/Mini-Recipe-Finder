@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(326deg, #b92e34 0%, #3d0c02 74%);
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 20px;
+    width: 700px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 20px 15px;
+    margin-left: 10px;
+    background-color: rgb(118, 212, 31);
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(177, 227, 61);
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.recipe-card h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.recipe-card a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #28a745;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    #resultsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 90%;
+    }
+}
