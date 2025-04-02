@@ -30,7 +30,7 @@ A responsive web app that allows users to search for meal recipes by ingredient 
 
 ## 🌐 Live Demo
 
-🔗 [View Live App](https://yourusername.github.io/mini-recipe-finder)
+🔗 [View Live App](https://rayaelhss.github.io/Mini-Recipe-Finder/)
 
 ---
 
