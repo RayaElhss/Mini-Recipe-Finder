@@ -92,7 +92,27 @@ button:hover {
         align-items: center;
     }
 
+    .search-container {
+        flex-direction: column;
+    }
+
     .recipe-card {
         width: 90%;
+    }
+}
+
+
+/* Responsive styles for small screens */
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: stretch;
+        /* Makes inputs/buttons fill the width */
+    }
+
+    .search-container input,
+    .search-container button,
+    .search-container select {
+        width: 100%;
     }
 }
